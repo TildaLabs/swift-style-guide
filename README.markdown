@@ -1,10 +1,8 @@
-# The Official raywenderlich.com Swift Style Guide.
+# The Official Swift Style Guide for Tildalabs.
 
 This style guide is different from others you may see, because the focus is centered on readability for print and the web. We created this style guide to keep the code in our books, tutorials, and starter kits nice and consistent — even though we have many different authors working on the books.
 
 Our overarching goals are conciseness, readability, and simplicity.
-
-Writing Objective-C? Check out our [Objective-C Style Guide](https://github.com/raywenderlich/objective-c-style-guide) too.
 
 ## Table of Contents
 
@@ -546,7 +544,7 @@ let colour = "red"
 
 ## Smiley Face
 
-Smiley faces are a very prominent style feature of the raywenderlich.com site! It is very important to have the correct smile signifying the immense amount of happiness and excitement for the coding topic. The closing square bracket `]` is used because it represents the largest smile able to be captured using ASCII art. A closing parenthesis `)` creates a half-hearted smile, and thus is not preferred.
+Smiley faces are a very prominent style feature! It is very important to have the correct smile signifying the immense amount of happiness and excitement for the coding topic. The closing square bracket `]` is used because it represents the largest smile able to be captured using ASCII art. A closing parenthesis `)` creates a half-hearted smile, and thus is not preferred.
 
 **Preferred:**
 ```
@@ -561,7 +559,7 @@ Smiley faces are a very prominent style feature of the raywenderlich.com site! I
 
 ## Credits
 
-This style guide is a collaborative effort from the most stylish raywenderlich.com team members: 
+This style guide is a fork of the wonderful style guide from raywenderlich.com. It was originally created by the collaborative effort from the most stylish raywenderlich.com team members: 
 
 * [Jawwad Ahmad](https://github.com/jawwad)
 * [Soheil Moayedi Azarpour](https://github.com/moayes)
