@@ -10,6 +10,7 @@ Our overarching goals are conciseness, readability, and simplicity.
   * [Prose](#prose)
   * [Class Prefixes](#class-prefixes)
 * [Spacing](#spacing)
+* [Line Wrapping](#line-wrapping)
 * [Comments](#comments)
 * [Classes and Structures](#classes-and-structures)
   * [Use of Self](#use-of-self)
@@ -148,6 +149,37 @@ else {
 ```
 
 * There should be exactly one blank line between methods to aid in visual clarity and organization. Whitespace within methods should separate functionality, but having too many sections in a method often means you should refactor into several methods.
+
+## Line Wrapping
+
+Enable Page Guide at Column 80. Try to hard wrap any lines longer than 80 characters. Lines must be shorter than **100 characters** in length. This is the maximum space available for main and assistant editor on a 13" MacBook Air with xcode maximised and sidebars off.
+
+* When wrapping methods calls with long list of parameters, all the named parameters should start on a new line indented by two spaces from the original method name.
+
+* The closing ) should appear on a line of it's own indented on same level as the method name.
+
+* When wrapping long list of chained methods only the original target should be on the first line. All subsequent method calls should indented two spaces from the original target and start with `.` on a new line.
+
+**Preferrered:**
+```Swift
+let response = Alamofire
+                 .request(.POST, M.url(),
+                   parameters: toJSON(),
+                   encoding: .JSON
+                 )
+                 .responseObject(callback)
+```
+
+**Not Preferred:**
+```swift
+let response = Alamofire
+  .request(.post, M.url(), parameters: toJSON(),
+             encoding: .JSON
+             )
+  .responseObject(callback)
+```
+
+
 
 ## Comments
 
